@@ -134,9 +134,10 @@ header nav {
 
 .recent {
     background-color: white;
-    width: 374px; /*--- 418 - 2*(22) ---*/
+    width: 44%; /*--- 418 - 2*(22) ---*/
     /* height: 295px; */
     padding: 22px;
+    flex-wrap: wrap;
 }
 
 .recent h3 {
@@ -180,7 +181,8 @@ header nav {
 .recent-posts .recent-content {
     display: flex;
     justify-content: space-between;
-    height: 295px;
+    /* height: 295px; */
+    flex-wrap: wrap;
 }
 
 .recent-posts .recent-time {
@@ -398,6 +400,16 @@ footer .copy-right {
         width: 80%;
         height: auto;
     }
+    
+    .get-to-know .container {
+        flex-direction: column-reverse;
+        margin-bottom: 20px;
+    }
+
+    .recent {
+        width: 100%;
+        margin-bottom: 20px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -448,6 +460,17 @@ footer .copy-right {
         height: auto;
     }
     .featured-work .featured-detail {
+        width: 100%;
+    }
+
+    .get-to-know .container {
+        align-items: center;
+    }
+    .get-to-know .info {
+        justify-content: center;
+        text-align: center;
+    }
+    .get-to-know p {
         width: 100%;
     }
 }
