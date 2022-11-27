@@ -21,7 +21,7 @@ body {
 .container {
     width: 75%; /*--- 2*(148) / 1152 ---*/
     display: flex;
-    margin: 0 auto;
+    margin: 0 auto; 
 }
 
 p {
@@ -214,7 +214,7 @@ header nav {
     justify-content: space-between;
     padding-bottom: 15px;
     margin: 31px 0 0 0;
-    border-bottom: 1px solid #E0E0E0;;
+    border-bottom: 1px solid #E0E0E0;
 }
 
 .featured-work .header {
@@ -312,5 +312,147 @@ footer .copy-right {
     /* line-height: 21px; */
     text-align: center;
     margin-bottom: 54px;
+}
+/* ---------------------------------------------------------------*/
+
+
+/* ---------------------------------------------------------------*/
+/* Blog page -----------------------------------------------------*/
+/* ---------------------------------------------------------------*/
+
+/* main */
+.blog-main .container {
+    flex-direction: column;
+    width: 60%;
+    max-width: 681px;
+}
+
+.blog-main h1 {
+    margin-bottom: 23px;
+    font-weight: 700;
+    font-size: 44px;
+    /* line-height: 60px; */
+}
+
+.blog {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 29px;
+    margin-top: 32px;
+    border-bottom: 1px solid #E0E0E0;;
+    gap: 15px;
+}
+
+.blog-main h3 {
+    font-weight: 500;
+    font-size: 30px;
+    /* line-height: 44px; */
+}
+
+.blog .blog-time {
+    display: flex;
+    gap: 20px;
+    font-weight: 400;
+    font-size: 20px;
+    /* line-height: 29px; */
+}
+
+.blog p {
+    margin: 0;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+/* ---------------------------------------------------------------*/
+
+
+/* ---------------------------------------------------------------*/
+/* Work Page -----------------------------------------------------*/
+/* ---------------------------------------------------------------*/
+.featured-work .header-work-page {
+    font-weight: 900;
+    font-size: 44px;
+    /* line-height: 60px; */
+}
+/* ---------------------------------------------------------------*/
+
+
+/* ---------------------------------------------------------------*/
+/* Responsive ----------------------------------------------------*/
+/* ---------------------------------------------------------------*/
+@media (max-width: 1100px) {
+    .container {
+        width: 95%;
+    }
+
+    .blog-main .container {
+        width: 95%;
+        margin: 0, 18px;
+    }
+
+    .featured-work .featured {
+        flex-direction: column;
+        align-items: center;
+    }
+    .featured-work img {
+        width: 80%;
+        height: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .blog-main h1 {
+        font-weight: 700;
+        font-size: 30px;
+        /* line-height: 60px; */
+    }    
+    .blog-main h3 {
+        font-weight: 500;
+        font-size: 26px;
+        /* line-height: 38px; */
+    }    
+    .blog .blog-time {
+        font-weight: 400;
+        font-size: 16px;
+        /* line-height: 24px; */
+    }    
+    .blog p {
+        margin: 0;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .featured-work .header-work-page {
+        font-weight: 700;
+        font-size: 30px;
+        /* line-height: 60px; */
+    }
+    .featured-work .topic {
+        font-weight: 700;
+        font-size: 24px;
+        /* line-height: 30px; */
+    }
+    .featured-work .year {
+        font-weight: 900;
+        font-size: 16px;
+        /* line-height: 60px; */
+    }
+    .featured-work .category {
+        font-weight: 400;
+        font-size: 16px;
+        /* line-height: 24px; */
+    }
+    .featured-work .work-pic {
+        width: 100%;
+        height: auto;
+    }
+    .featured-work .featured-detail {
+        width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+
 }
 /* ---------------------------------------------------------------*/
