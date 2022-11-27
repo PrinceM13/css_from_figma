@@ -6,18 +6,28 @@ h1, h2, h3, h4, h5, h6, body {
 }
 
 html {
-    /* font-family: "Patrick Hand", cursive; */
+    font-family: 'Heebo', sans-serif;
+    font-style: normal;
+    background-color: #E5E5E5;
+    color: #21243D;
 }
 
 body {
-    max-width: 1200px;
+    max-width: 1152px;
     margin: 0 auto;
+    background-color: white;
 }
 
 .container {
-    width: 80%;
+    width: 75%;
     display: flex;
     margin: 0 auto;
+}
+
+p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
 }
 /* ---------------------------------------------------------------*/
 
@@ -27,16 +37,101 @@ body {
 /* ---------------------------------------------------------------*/
 
 /* header */
+header {
+    min-height: 150px;
+    display: flex;
+}
+
 header .container {
+    width: 100%;
     justify-content: right;
 }
 
+header a {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 29px;
+
+    text-decoration: none;
+    color: inherit;
+}
+
+header nav {
+    display: flex;
+    margin-top: 20px;
+    margin-right: 65px;
+    gap: 40px;
+}
+
 /* get to know */
+.get-to-know {
+    min-height: 400px;
+}
+
+.get-to-know .info {
+    padding-top: 50px;
+}
+
+.get-to-know h1 {
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 60px;
+}
+
+.get-to-know p {
+    width: 80%;
+    margin-top: 20px;
+}
+
+.get-to-know  .img-effect {
+    padding-top: 48px;
+}
+
+.get-to-know .img-background {
+    width: 243px;
+    height: 243px;
+    border-radius: 50%;    
+    background-color: #edf7fa;
+}
+
 .get-to-know img {
-    border-radius: 200px;
+    width: 243px;
+    height: 243px;
+    border-radius: 50%;
+    position: absolute;
+    top: 185px;
+}
+
+.get-to-know button {
+    background: #FF6464;
+    border-radius: 2px;
+    border-style: none;
+    color: white;
+    padding: 0.5rem 1rem;
+    
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 29px;
+
+    margin-top: 15px;
 }
 
 /* recent posts */
+.recent-posts {
+    background-color: #edf7fa;
+}
+
+.recent {
+    background-color: white;
+}
+
+.recent-posts .view-all {
+    color: #4aa5c8;
+}
+
+
 .recent-posts .container {
     flex-direction: column;
 }
