@@ -135,14 +135,16 @@ header nav {
 .recent {
     background-color: white;
     width: 44%; /*--- 418 - 2*(22) ---*/
-    /* height: 295px; */
+    /* height: 100%; */
     padding: 22px;
+    display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 15px;
 }
 
 .recent h3 {
-    width: 374px;
-    height: 85px;
+    width: 95%;
 
     font-weight: 700;
     font-size: 26px;
@@ -183,6 +185,7 @@ header nav {
     justify-content: space-between;
     /* height: 295px; */
     flex-wrap: wrap;
+    min-height: 295px;
 }
 
 .recent-posts .recent-time {
@@ -198,6 +201,8 @@ header nav {
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
+
+    margin: 0;
 }
 
 /* featured work */
