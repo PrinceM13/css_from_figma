@@ -328,6 +328,10 @@ footer .copy-right {
 /* ---------------------------------------------------------------*/
 
 /* main */
+.blog-main {
+    margin-top: 20px;
+}
+
 .blog-main .container {
     flex-direction: column;
     width: 60%;
@@ -369,6 +373,10 @@ footer .copy-right {
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
+}
+
+.contact {
+    margin-top: 60px;
 }
 /* ---------------------------------------------------------------*/
 
@@ -489,5 +497,98 @@ footer .copy-right {
 
 @media (max-width: 600px) {
 
+}
+/* ---------------------------------------------------------------*/
+
+
+/* ---------------------------------------------------------------*/
+/* Hamburger Menu ------------------------------------------------*/
+/* ---------------------------------------------------------------*/
+#hamburger-menu {
+    display: none;
+}
+
+.hamburger-container {
+    display: none;
+    width: 30px;
+    height: 80%;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-right: 10px;
+}
+
+.hamburger-button, .hamburger-button::before, .hamburger-button::after {
+    position: absolute;
+    background-color: #21243D;
+    width: 20px;
+    height: 3px;
+    border-radius: 2px;
+}
+.hamburger-button::before {
+    content: '';
+    margin-top: -6px;
+}
+.hamburger-button::after {
+    content: '';
+    margin-top: 6px;
+}
+
+/* header input:checked + .hamburger-container .hamburger-button {
+    background-color: #21243D00;
+}
+header input:checked + .hamburger-container .hamburger-button::before {
+    margin-top: 0px;
+    transform: rotate(45deg);
+}
+header input:checked + .hamburger-container .hamburger-button::after {
+    margin-top: 0px;
+    transform: rotate(-45deg);
+} */
+
+@media (max-width: 768px) {
+    .hamburger-container {
+        display: flex;
+    }
+    
+    header .container {
+        height: 50px;
+    }
+
+    header nav {
+        position: absolute;
+        top: 38px;
+        margin: 0;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        gap: 0;
+    }
+
+    /* header #hamburger-menu ~ nav > a {
+        height: 0;
+        border: 0;
+        padding: 0;
+        margin: 0;
+    }
+    header #hamburger-menu:checked ~ nav > a {
+        height: auto;
+        border: 1px solid #21243D;
+    } */
+
+    header nav > a {
+        margin: 0;
+        padding: 0.08rem;
+        color: white;
+        background-color: #21243D;
+        width: 100%;
+        text-align: center;
+        font-size: 14px;
+    }
+    header #hamburger-menu ~ nav > a:not(:last-child) {
+        border-bottom: 1px solid white;
+    }
 }
 /* ---------------------------------------------------------------*/
