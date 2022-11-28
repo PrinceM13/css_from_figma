@@ -56,7 +56,7 @@ header a {
     color: inherit;
 }
 
-header a:hover {
+header a:hover, .current {
     color: #FF6464;
 }
 
@@ -396,7 +396,8 @@ footer .copy-right {
         flex-direction: column;
         align-items: center;
     }
-    .featured-work img {
+
+    .featured-work .featured-img {
         width: 80%;
         height: auto;
     }
@@ -455,11 +456,8 @@ footer .copy-right {
         font-size: 16px;
         /* line-height: 24px; */
     }
-    .featured-work .work-pic {
-        width: 100%;
-        height: auto;
-    }
-    .featured-work .featured-detail {
+
+    .featured-work .featured-detail, .featured-work .featured-img {
         width: 100%;
     }
 
