@@ -525,6 +525,7 @@ footer .copy-right {
     width: 20px;
     height: 3px;
     border-radius: 2px;
+    transition: transform 300ms;
 }
 .hamburger-button::before {
     content: '';
@@ -535,17 +536,17 @@ footer .copy-right {
     margin-top: 6px;
 }
 
-/* header input:checked + .hamburger-container .hamburger-button {
+header input:checked + .hamburger-container .hamburger-button {
     background-color: #21243D00;
 }
 header input:checked + .hamburger-container .hamburger-button::before {
     margin-top: 0px;
-    transform: rotate(45deg);
+    transform: rotate(135deg);
 }
 header input:checked + .hamburger-container .hamburger-button::after {
     margin-top: 0px;
-    transform: rotate(-45deg);
-} */
+    transform: rotate(-135deg);
+}
 
 @media (max-width: 768px) {
     .hamburger-container {
@@ -558,25 +559,31 @@ header input:checked + .hamburger-container .hamburger-button::after {
 
     header nav {
         position: absolute;
-        top: 38px;
+        /* top: 38px; */
         margin: 0;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         width: 100%;
         gap: 0;
+        top: -200px; /* sent it to the moon */
     }
 
-    /* header #hamburger-menu ~ nav > a {
+    header #hamburger-menu ~ nav > a {
         height: 0;
         border: 0;
         padding: 0;
         margin: 0;
+        /* transition: height 1s; */
+    }
+    header #hamburger-menu:checked ~ nav{
+        top: 38px;
     }
     header #hamburger-menu:checked ~ nav > a {
         height: auto;
         border: 1px solid #21243D;
-    } */
+        /* transition: height 1s; */
+    }
 
     header nav > a {
         margin: 0;
